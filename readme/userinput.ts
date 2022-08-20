@@ -1,4 +1,4 @@
-import readme from "./readme";
+import Readme from "./readme";
 import inquirer from "inquirer";
 interface answers {
     Title: string;

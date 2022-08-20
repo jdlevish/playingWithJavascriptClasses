@@ -1,25 +1,43 @@
 // creat a readme file for projects using typscript and class syntax
-// import inquirer from "inquirer";
+import inquirer from "inquirer";
 const fs = require("fs");
 
-interface readme {
+// interface ReadmeInterface {
+//     new(Title: string,
+//         Description: string,
+//         TableOfContents: string,
+//         Installation: string,
+//         Usage: string,
+//         License: string,
+//         Contributing: string,
+//         Tests: string,
+//         Requirements: string,
+//         Contributions: string,
+//         GithubUserName: string,
+//         Email: string,
+//         ScreenShot: string,
+//         generateReademeMD: Function,
+//         returnReadme: Function);
+
+
+
+
+
+
+export default class Readme {
     Title: string;
     Description: string;
     TableOfContents: string;
     Installation: string;
-    Usage: string;
-    License: string;
-    Contributing: string;
-    Tests: string;
     Requirements: string;
+    Usage: string;
+    Tests: string;
     Contributions: string;
     GithubUserName: string;
     Email: string;
+    License: string;
     ScreenShot: string;
-}
-
-class readme {
-    constructor(Title: string, Description: string, TableOfContents: string, Installation: string, Requirements: string, Usage: string, Tests: string, Contributions: string, GithubUserName: string, Email: string, License: string, ScreenShot: string) {
+    constructor(Title, Description, TableOfContents, Installation, Requirements, Usage, Tests, Contributions, GithubUserName, Email, License, ScreenShot) {
         this.Title = Title;
         this.Description = Description;
         this.TableOfContents = TableOfContents;
@@ -34,13 +52,13 @@ class readme {
         this.ScreenShot = ScreenShot;
     }
     // method that writes the markdown file from the user input
-    generateReademeMD = () => {
+    generateReademeMD: Function = () => {
 
         return `
-        ![](${answers.screenShot})
-        # ${answers.title}
+        ![](${this.ScreenShot})
+        # ${this.Title}
         
-        ## ![](https://img.shields.io/github/license/${answers.github}/${answers.title}/)
+        ## ![](https://img.shields.io/github/license/${this.GithubUserName}/${this.Title}/)
         
         ## Table Of Contents
         
@@ -56,37 +74,58 @@ class readme {
         
         *[Contributing](#Contributing)
         ## Description
-        ${answers.description}
+        ${this.Description}
             
         ## Installation
             
-        ${answers.installation}
+        ${this.Installation}
             
         ## Requirements
             
-        ${answers.requirements}
+        ${this.Requirements}
         ## Usage Instructions
         
-        ${answers.usage}
+        ${this.Usage}
             
         ## Running the tests
             
-        ${answers.tests}
+        ${this.Tests}
             
         ## Contributing
             
-        ${answers.contributions}
+        ${this.Contributions}
         
         ## Additional questions
-        contact the creator at ${answers.email} or ${answers.github} on github.com
+        contact the creator at ${this.Email} or ${this.GithubUserName} on github.com
         
         ## licensing
-        this project is covered under the ${answers.license} for more info view the  [license.txt](/license.txt)
+        this project is covered under the ${this.License} for more info view the  [license.txt](/license.txt)
             `
             ;
     }
+    returnReadme = () => {
+        const readMeObject = {
+            Title: this.Title,
+            Description: this.Description,
+            TableOfContents: this.TableOfContents,
+            Installation: this.Installation,
+            Requirements: this.Requirements,
+            Usage: this.Usage,
+            Tests: this.Tests,
+            Contributions: this.Contributions,
+            GithubUserName: this.GithubUserName,
+            Email: this.Email,
+            License: this.License,
+            ScreenShot: this.ScreenShot
+        }
+        console.log(readMeObject);
+        return readMeObject;
+
+
+    }
 }
 
-export default readme
+
+
 
 
