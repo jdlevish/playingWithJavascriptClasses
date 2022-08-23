@@ -30,7 +30,7 @@ var Readme = /** @class */ (function () {
         };
         this.writeReadmeToFile = function () {
             var markDownFile = _this.generateReademeMD();
-            return writeFileAsync("readme.md", markDownFile);
+            return writeFileAsync("README.md", markDownFile);
         };
         this.Title = Title;
         this.Description = Description;
