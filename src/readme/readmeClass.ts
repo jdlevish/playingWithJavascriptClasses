@@ -111,7 +111,7 @@ export default class Readme {
     }
     writeReadmeToFile = () => {
         const markDownFile = this.generateReademeMD()
-        return writeFileAsync("readme.md", markDownFile);
+        return writeFileAsync("README.md", markDownFile);
     }
 }
 
