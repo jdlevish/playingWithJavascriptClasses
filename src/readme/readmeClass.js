@@ -5,7 +5,7 @@ var fs = require("fs");
 var util = require("util");
 var writeFileAsync = util.promisify(fs.writeFile);
 var Readme = /** @class */ (function () {
-    function Readme(Title, Description, TableOfContents, Installation, Requirements, Usage, Tests, Contributions, GithubUserName, Email, License, ScreenShot) {
+    function Readme(Title, Description, Installation, Requirements, Usage, Tests, Contributions, GithubUserName, Email, License, ScreenShot) {
         var _this = this;
         // method that writes the markdown file from the user input
         this.generateReademeMD = function () {
@@ -15,7 +15,6 @@ var Readme = /** @class */ (function () {
             var readMeObject = {
                 Title: _this.Title,
                 Description: _this.Description,
-                TableOfContents: _this.TableOfContents,
                 Installation: _this.Installation,
                 Requirements: _this.Requirements,
                 Usage: _this.Usage,
@@ -35,7 +34,6 @@ var Readme = /** @class */ (function () {
         };
         this.Title = Title;
         this.Description = Description;
-        this.TableOfContents = TableOfContents;
         this.Installation = Installation;
         this.Requirements = Requirements;
         this.Usage = Usage;

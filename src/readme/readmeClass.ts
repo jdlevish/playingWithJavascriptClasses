@@ -12,7 +12,6 @@ const writeFileAsync = util.promisify(fs.writeFile);
 export default class Readme {
     Title: string;
     Description: string;
-    TableOfContents: string;
     Installation: string;
     Requirements: string;
     Usage: string;
@@ -23,10 +22,9 @@ export default class Readme {
     License: string;
     ScreenShot: string;
     answerObject: object;
-    constructor(Title, Description, TableOfContents, Installation, Requirements, Usage, Tests, Contributions, GithubUserName, Email, License, ScreenShot) {
+    constructor(Title, Description, Installation, Requirements, Usage, Tests, Contributions, GithubUserName, Email, License, ScreenShot) {
         this.Title = Title;
         this.Description = Description;
-        this.TableOfContents = TableOfContents;
         this.Installation = Installation;
         this.Requirements = Requirements;
         this.Usage = Usage;
@@ -96,7 +94,6 @@ export default class Readme {
         const readMeObject = {
             Title: this.Title,
             Description: this.Description,
-            TableOfContents: this.TableOfContents,
             Installation: this.Installation,
             Requirements: this.Requirements,
             Usage: this.Usage,
