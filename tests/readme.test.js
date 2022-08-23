@@ -1,4 +1,4 @@
-import Readme from '../readme/readme.ts'
+import Readme from '../src/readme/readmeClass.ts'
 
 
 describe("Readme", () => {

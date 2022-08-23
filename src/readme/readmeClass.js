@@ -1,6 +1,9 @@
 "use strict";
+// creat a readme file for projects using typscript and class syntax
 exports.__esModule = true;
 var fs = require("fs");
+var util = require("util");
+var writeFileAsync = util.promisify(fs.writeFile);
 var Readme = /** @class */ (function () {
     function Readme(Title, Description, TableOfContents, Installation, Requirements, Usage, Tests, Contributions, GithubUserName, Email, License, ScreenShot) {
         var _this = this;
@@ -23,7 +26,12 @@ var Readme = /** @class */ (function () {
                 License: _this.License,
                 ScreenShot: _this.ScreenShot
             };
+            console.log(readMeObject);
             return readMeObject;
+        };
+        this.writeReadmeToFile = function () {
+            var markDownFile = _this.generateReademeMD();
+            return writeFileAsync("readme.md", markDownFile);
         };
         this.Title = Title;
         this.Description = Description;
@@ -40,9 +48,4 @@ var Readme = /** @class */ (function () {
     }
     return Readme;
 }());
-var default_1 = /** @class */ (function () {
-    function default_1() {
-    }
-    return default_1;
-}());
-exports["default"] = default_1;
+exports["default"] = Readme;

@@ -1,23 +1,8 @@
 // creat a readme file for projects using typscript and class syntax
-import inquirer from "inquirer";
-const fs = require("fs");
 
-// interface ReadmeInterface {
-//     new(Title: string,
-//         Description: string,
-//         TableOfContents: string,
-//         Installation: string,
-//         Usage: string,
-//         License: string,
-//         Contributing: string,
-//         Tests: string,
-//         Requirements: string,
-//         Contributions: string,
-//         GithubUserName: string,
-//         Email: string,
-//         ScreenShot: string,
-//         generateReademeMD: Function,
-//         returnReadme: Function);
+const fs = require("fs");
+const util = require("util");
+const writeFileAsync = util.promisify(fs.writeFile);
 
 
 
@@ -37,6 +22,7 @@ export default class Readme {
     Email: string;
     License: string;
     ScreenShot: string;
+    answerObject: object;
     constructor(Title, Description, TableOfContents, Installation, Requirements, Usage, Tests, Contributions, GithubUserName, Email, License, ScreenShot) {
         this.Title = Title;
         this.Description = Description;
@@ -52,6 +38,9 @@ export default class Readme {
         this.ScreenShot = ScreenShot;
     }
     // method that writes the markdown file from the user input
+
+
+
     generateReademeMD: Function = () => {
 
         return `
@@ -122,6 +111,10 @@ export default class Readme {
         return readMeObject;
 
 
+    }
+    writeReadmeToFile = () => {
+        const markDownFile = this.generateReademeMD()
+        return writeFileAsync("readme.md", markDownFile);
     }
 }
 
