@@ -1,0 +1,34 @@
+{
+  "name": "playingwithjavascriptclasses",
+  "version": "1.0.0",
+  "description": "a collection of small projects built using classes in JavaScript",
+  "main": "house.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.3",
+    "ts-jest": "^28.0.8",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdlevish/playingWithJavascriptClasses.git"
+  },
+  "author": "Joshua Levish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdlevish/playingWithJavascriptClasses/issues"
+  },
+  "homepage": "https://github.com/jdlevish/playingWithJavascriptClasses#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-typescript": "^7.18.6",
+    "babel-jest": "^28.1.3"
+  }
+}
