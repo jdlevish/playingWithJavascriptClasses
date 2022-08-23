@@ -20,11 +20,6 @@ function userInput() {
         },
         {
             type: "input",
-            name: "TableOfContents",
-            message: "enter the table of contents of your project"
-        },
-        {
-            type: "input",
             name: "Installation",
             message: "enter the installation process for your project"
 
@@ -79,7 +74,7 @@ function userInput() {
     ]);
 }
 userInput().then(function (answers) {
-    const readme = new Readme(answers.Title, answers.Description, answers.TableOfContents, answers.Installation, answers.Requirements, answers.Usage, answers.Tests, answers.Contributions, answers.GithubUserName, answers.Email, answers.License, answers.ScreenShot);
+    const readme = new Readme(answers.Title, answers.Description, answers.Installation, answers.Requirements, answers.Usage, answers.Tests, answers.Contributions, answers.GithubUserName, answers.Email, answers.License, answers.ScreenShot);
     readme.writeReadmeToFile()
 }).catch(function (err) {
     console.log(err);

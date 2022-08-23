@@ -1,8 +1,8 @@
 
-        ![](test)
-        # test
+        ![]()
+        # playing with classes in javascript
         
-        ## ![](https://img.shields.io/github/license/test/test/)
+        ## ![](https://img.shields.io/github/license/jdlevish/playing with classes in javascript/)
         
         ## Table Of Contents
         
@@ -18,30 +18,30 @@
         
         *[Contributing](#Contributing)
         ## Description
-        test
+        just a collection of small projects built using JavaScript classes
             
         ## Installation
             
-        test
+        install nodeJs and run the file you would like in the terminal
             
         ## Requirements
             
-        test
+        users must have node installed as well as typescript to contribute to project
         ## Usage Instructions
         
-        test
+        this project was built for exploring class syntax in javaScript
             
         ## Running the tests
             
-        test
+        run npm test  to run tests
             
         ## Contributing
             
-        test
+        jdlevish
         
         ## Additional questions
-        contact the creator at test or test on github.com
+        contact the creator at jdlevish@gmail.com or jdlevish on github.com
         
         ## licensing
-        this project is covered under the BSD for more info view the  [license.txt](/license.txt)
+        this project is covered under the MIT for more info view the  [license.txt](/license.txt)
             
