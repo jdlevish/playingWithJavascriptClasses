@@ -1,47 +1,46 @@
-
-        ![]()
-        # playing with classes in javascript
+ # PlayingWithClassesInJavascript
         
-        ## ![](https://img.shields.io/github/license/jdlevish/playing with classes in javascript/)
+ ## ![](https://img.shields.io/github/license/jdlevish/playingWithJavascriptClasses/)
         
-        ## Table Of Contents
+ ## Table Of Contents
         
-        *[Description](#Description)
+ *[Description](#Description)
         
-        *[installation](#Installation)
+ *[installation](#Installation)
         
-        *[requirements](#requirements)
+ *[requirements](#requirements)
         
-        *[Usage Instructions](#Usage-Instructions)
+*[Usage Instructions](#Usage-Instructions)
         
-        *[Running the tests](#Running-the-tests)
+ *[Running the tests](#Running-the-tests)
         
-        *[Contributing](#Contributing)
-        ## Description
-        just a collection of small projects built using JavaScript classes
+*[Contributing](#Contributing) 
+        
+ ## Description
+ just a collection of small projects built using JavaScript classes
             
-        ## Installation
+ ## Installation
             
-        install nodeJs and run the file you would like in the terminal
+ install nodeJs and run the file you would like in the terminal
             
-        ## Requirements
+## Requirements
             
-        users must have node installed as well as typescript to contribute to project
-        ## Usage Instructions
+users must have node installed as well as typescript to contribute to project
+ ## Usage Instructions
         
-        this project was built for exploring class syntax in javaScript
+ this project was built for exploring class syntax in javaScript
             
-        ## Running the tests
+ ## Running the tests
             
-        run npm test  to run tests
+ run npm test  to run tests
             
-        ## Contributing
+ ## Contributing
             
-        jdlevish
+jdlevish
         
-        ## Additional questions
-        contact the creator at jdlevish@gmail.com or jdlevish on github.com
+ ## Additional questions
+ contact the creator at jdlevish@gmail.com or jdlevish on github.com
         
-        ## licensing
-        this project is covered under the MIT for more info view the  [license.txt](/license.txt)
+ ## licensing
+  this project is covered under the MIT for more info view the  [license.txt](/license.txt)
             
