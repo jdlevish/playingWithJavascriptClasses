@@ -42,5 +42,5 @@ jdlevish
  contact the creator at jdlevish@gmail.com or jdlevish on github.com
         
  ## licensing
-  this project is covered under the MIT for more info view the  [license.txt](/license.txt)
+ this project is covered under the MIT for more info view the  [license.txt](/license.txt)
             
