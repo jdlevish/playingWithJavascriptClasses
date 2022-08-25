@@ -42,51 +42,55 @@ export default class Readme {
     generateReademeMD: Function = () => {
 
         return `
-        ![](${this.ScreenShot})
-        # ${this.Title}
+ ![](${this.ScreenShot})
+# ${this.Title}
         
-        ## ![](https://img.shields.io/github/license/${this.GithubUserName}/${this.Title}/)
+## ![](https://img.shields.io/github/license/${this.GithubUserName}/${this.Title}/)
         
-        ## Table Of Contents
+## Table Of Contents
         
-        *[Description](#Description)
+*[Description](#Description)
         
-        *[installation](#Installation)
+*[installation](#Installation)
         
-        *[requirements](#requirements)
+*[requirements](#requirements)
         
-        *[Usage Instructions](#Usage-Instructions)
+*[Usage Instructions](#Usage-Instructions)
         
-        *[Running the tests](#Running-the-tests)
+*[Running the tests](#Running-the-tests)
         
-        *[Contributing](#Contributing)
-        ## Description
-        ${this.Description}
+*[Contributing](#Contributing)
+## Description
+
+${this.Description}
             
-        ## Installation
+## Installation
             
-        ${this.Installation}
+${this.Installation}
             
-        ## Requirements
+## Requirements
             
-        ${this.Requirements}
-        ## Usage Instructions
+${this.Requirements}
+
+## Usage Instructions
         
-        ${this.Usage}
+${this.Usage}
             
-        ## Running the tests
+## Running the tests
             
-        ${this.Tests}
+${this.Tests}
             
-        ## Contributing
+## Contributing
             
-        ${this.Contributions}
+${this.Contributions}
         
-        ## Additional questions
-        contact the creator at ${this.Email} or ${this.GithubUserName} on github.com
+## Additional questions
+
+contact the creator at ${this.Email} or ${this.GithubUserName} on github.com
         
-        ## licensing
-        this project is covered under the ${this.License} for more info view the  [license.txt](/license.txt)
+## licensing
+
+this project is covered under the ${this.License} for more info view the  [license.txt](/license.txt)
             `
             ;
     }
