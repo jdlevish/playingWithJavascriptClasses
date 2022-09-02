@@ -20,9 +20,11 @@ class LinkedList<T> {
         this.next = null;
     }
     push: Function = (value: T) => {
+        this.size = this.size + 1
         const newNode = new ListNode<T>(value);
         if (!this.head) {
             this.head = newNode;
+
         }
 
     }
@@ -43,7 +45,7 @@ class LinkedList<T> {
             current = current.next;
         }
 
-        prevNode.next = null;
+        // prevNode.next = null;
 
         this.size--;
         return true;

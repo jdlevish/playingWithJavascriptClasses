@@ -14,6 +14,7 @@ var LinkedList = /** @class */ (function () {
         if (head === void 0) { head = null; }
         var _this = this;
         this.push = function (value) {
+            _this.size = _this.size + 1;
             var newNode = new ListNode(value);
             if (!_this.head) {
                 _this.head = newNode;
@@ -34,7 +35,7 @@ var LinkedList = /** @class */ (function () {
                 prevNode = current;
                 current = current.next;
             }
-            prevNode.next = null;
+            // prevNode.next = null;
             _this.size--;
             return true;
         };
@@ -44,4 +45,4 @@ var LinkedList = /** @class */ (function () {
     }
     return LinkedList;
 }());
-exports.LinkedList = LinkedList;
+exports["default"] = LinkedList;
